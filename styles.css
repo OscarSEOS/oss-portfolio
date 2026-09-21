@@ -1,20 +1,52 @@
-/*{
-    margin: 0;
-    padding: 0;
-}*/
-/*body{
-    min-height: 100vh;
-    background-image: url(Pattern_baggrund_black.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-*/
 
-nav{
-    background-color: white;
-    /*box-shadow: 3px 3px 5px rgba(0,0,0,1.1);*/
+html{
+    scroll-behavior: smooth;
 }
+
+body{
+    font-family: 'Manrope', sans-serif;
+    background-image: url("images/Background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+
+@media (max-width: 600px){
+    nav{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    nav li{
+        width: 100%;
+        height: auto;
+    }
+    nav a{
+        width: 100%;
+        padding: 12px 16px;
+        box-sizing: border-box;
+    }
+    .start-box,
+    section{
+        width: 100%;
+        padding: 16px;
+    }
+}
+header{
+    background-color: #FDFCF7;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    padding: 16px 24px;
+}
+
 nav ul{
     list-style: none;
     display: flex;
@@ -39,73 +71,47 @@ nav a:hover{
 
 .start-box{
     width: fit-content;
-    background-color: #ffffff;
+    background-color: #FDFCF7;
     padding: 24px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
     max-width: 800px;
-    margin: auto;
+    margin: 100px auto;
+    box-sizing: border-box;
 }
-/*
-#Om-Mig{
-    width: fit-content;
-    background-color: #ffffff;
-    padding: 24px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-    max-width: 800px;
-    margin: 200px;
-
-}
-
-#Uddannelse{
-    width: fit-content;
-    background-color: #ffffff;
-    padding: 24px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-    max-width: 800px;
-    margin: 0;
-}
-
-#Jobs{
-    width: fit-content;
-    background-color: #ffffff;
-    padding: 24px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-    max-width: 800px;
-    margin: auto;
-}
-
-#Projekter{
-    width: fit-content;
-    background-color: #ffffff;
-    padding: 24px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-    max-width: 800px;
-    margin: 0;
-}
-*/
 
 section{
-    width: fit-content;
-    background-color: #ffffff;
+    width: 100%;
+    background-color: #FDFCF7;
     padding: 24px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
     max-width: 800px;
-    margin: auto;
+    margin: 50px auto;
+    box-sizing: border-box;
 
 }
 
-@media (max-width: 720px){
-
+footer{
+    background-color: #FDFCF7;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    padding: 16px 24px;
 }
-
 
 .footer-container{
     display: flex;
     align-items: center;
+}
+
+section img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 0 16px;
+}
+
+.profile-photo{
+    max-width: 220px;
+    margin: 0 auto 16px;
 }
